@@ -1,0 +1,15 @@
+{
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "py",
+    "python",
+    "javascript",
+    "yaml",
+    "json"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/.local/bin/flake8",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.sortImports.path": "~/.local/bin/isort"
+}
