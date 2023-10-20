@@ -52,15 +52,14 @@ mkdir -p .local/bin && cd .local/bin
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage
-```
 
-3. Create aliases. Run only once that!
-```
-echo "alias nvim=~/.local/bin/nvim.appimage" >> ~/.bash_aliases
+# Rename the appimage, this will allow us to call nvim without to enter an alias
+mv ~/.local/bin/nvim.appimage ~/.local/bin/nvim
 source .bashrc
+
 ```
 
-4. Install node.js for coc.nvim ". We use the version 18.
+3. Install node.js for coc.nvim ". We use the version 18.
 ```
 # Select the wanted version of node
 NODE_MAJOR=18
@@ -79,13 +78,13 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 ```
 
-5. Install packer to install the neovim apps
+4. Install packer to install the neovim apps
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-6. Install neovim-remote to be able to call neovim inside a neovim instance (use mainly to commit)
+5. Install neovim-remote to be able to call neovim inside a neovim instance (use mainly to commit)
 ```
 pip3 install neovim-remote
 ```
