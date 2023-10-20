@@ -11,7 +11,7 @@ sudo apt install git
 
 2. Add the alias
 ```
-echo 'gitconfig="usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME"' >> .bash_aliases
+echo 'alias gitconfig="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME"' >> .bash_aliases
 source ~/.bashrc
 ```
 
