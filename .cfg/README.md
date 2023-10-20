@@ -23,7 +23,7 @@ gitconfig config --local status.showUntrackedFiles no
 
 4. Initialisation on others machines
 ```
-git clone --bare <git-repo-url> $HOME/.cfg
+git clone --bare git@github.com:loicJubin/dotfiles.git $HOME/.cfg
 gitconfig config --local status.showUntrackedFiles no
 ```
 It's possible there is a conflict with existing files. You need to delete/move them.
